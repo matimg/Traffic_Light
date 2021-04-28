@@ -11,3 +11,15 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.semaforo{
+    width: 220px;
+    height: 550px;
+}
+
+.foco{
+    height: 150px;
+}
+
+.luz{
+    box-shadow: 0 0 15px 5px white;
+}
