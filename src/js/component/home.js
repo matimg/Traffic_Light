@@ -5,21 +5,34 @@ import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
 export function Home() {
-	const [color, setColor] = useState("red");
+	const [color, setColor] = useState("");
 	return (
 		<div className="text-center mt-5">
 			<div className="container bg-dark text-dark rounded semaforo">
-				semaforo
+				.
 				<div
-					className="rounded-circle text-danger m-3 bg-danger foco luz"
-					onClick={() => setColor(console.log("hola"))}>
-					div1
+					className={
+						"rounded-circle text-danger m-3 bg-danger foco " +
+						(color == "red" ? color : "")
+					}
+					onClick={() => setColor("red")}>
+					.
 				</div>
-				<div className="bg-warning rounded-circle text-warning m-3 foco">
-					div2
+				<div
+					className={
+						"rounded-circle text-warning m-3 bg-warning foco " +
+						(color == "yellow" ? color : "")
+					}
+					onClick={() => setColor("yellow")}>
+					.
 				</div>
-				<div className="bg-success rounded-circle text-success m-3 foco">
-					div3
+				<div
+					className={
+						"rounded-circle text-success m-3 bg-success foco " +
+						(color == "green" ? color : "")
+					}
+					onClick={() => setColor("green")}>
+					.
 				</div>
 			</div>
 		</div>
